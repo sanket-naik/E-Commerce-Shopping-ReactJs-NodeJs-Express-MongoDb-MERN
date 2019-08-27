@@ -22,7 +22,7 @@ export default function AddProduct() {
 
     const handleSubmit=(e)=>{
         e.preventDefault();
-        axios.post('http://localhost:5000/api/products/add',ProductForm)
+        axios.post('https://e-commerce-endpoints.herokuapp.com/api/products/add',ProductForm)
             .then((res)=>{
                 console.log(res)
                 setProductForm( {

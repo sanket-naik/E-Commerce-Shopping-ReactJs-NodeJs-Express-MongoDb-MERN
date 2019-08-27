@@ -1,8 +1,10 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
 
-In the project directory, you can run:
+This project is deployed @ [ebuy.netlify.com](https://ebuy.netlify.com/).
+
+## Available Demo
+
+Click @[here](https://ebuy.netlify.com/)
 
 ### `npm start`
 

@@ -16,7 +16,7 @@ export function ProductsProvider(props) {
 
     function fatchApi() {
         //GETTING THE API FROM NODE
-        axios.get("http://localhost:5000/api/products")
+        axios.get("https://e-commerce-endpoints.herokuapp.com/api/products")
             .then((res)=>{
                 setProductList(res.data)
                 // GETTING THE COUNT OF THE CART
@@ -65,7 +65,7 @@ export function ProductsProvider(props) {
 
         const inCart={inCart:true}
 
-        axios.patch(`http://localhost:5000/api/products/update/${id}`,inCart)
+        axios.patch(`https://e-commerce-endpoints.herokuapp.com/api/products/update/${id}`,inCart)
             .then((res)=>{
                 setCartItemCount({count:cartItemCount.count+1}) 
                 //UPDATING STATE PRODUCT
@@ -89,7 +89,7 @@ export function ProductsProvider(props) {
 
         const inCart={inCart:false}
 
-        axios.patch(`http://localhost:5000/api/products/update/${id}`,inCart)
+        axios.patch(`https://e-commerce-endpoints.herokuapp.com/api/products/update/${id}`,inCart)
             .then((res)=>{
                 setCartItemCount({count:cartItemCount.count-1}) 
                 //UPDATING STATE PRODUCT
